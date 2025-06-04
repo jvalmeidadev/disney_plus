@@ -1,0 +1,45 @@
+@use 'variaveis';
+.hero {
+    padding: 5.6vw;
+    min-height: 85vh;
+    background-image: url(../images/c774556a94c06088b2b36067aed86efa.jpg);
+    background-size: cover;
+    text-align: center;
+
+    &__conteudo {
+        max-width: 640px;
+
+        &__branding{
+            font-family: "bayformance";
+            font-size: 85px;
+            margin-bottom: 25px;
+
+        }
+        &__pagrafo {
+        font-family: "bayformance";
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+    &__pagrafo__button {
+        border-radius: 15px;
+        background-color: variaveis.$corDeFundo;
+        color: variaveis.$corTextoS;
+        padding: 10px;
+        margin-bottom: 25px;
+        cursor: pointer;
+        
+    }
+    &__link {
+        text-decoration: none;
+        font-size: 12px;
+        padding: 15px;
+        
+    }
+    }
+
+}
+
+
+
+
+

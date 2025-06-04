@@ -1,0 +1,61 @@
+@use 'variaveis';
+
+.show{
+    padding: 2vw 5.6vw;
+
+    &__list {
+        margin-top: 44px;
+        display: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+
+        &--is-active {
+            display: grid;
+        }
+        
+        &__itens {
+            img {
+                max-width: 100%;
+                height: 600px;
+                border-radius: 4px;
+                margin-bottom: 15px;
+            }
+        }
+
+        &__texto {
+            font-size: 30px;
+            text-align: center;
+        }
+
+    }
+
+    &__tab {
+        display: flex;
+        justify-content: center;
+        
+        &__button {
+            color: variaveis.$corTextoP;
+            font-size: 20px;
+            border: none;
+            padding-bottom: 5px;
+            background: none;
+            text-transform: uppercase;
+            margin: 0 1vw;
+            cursor: pointer;
+
+            &--is-active {
+                border-bottom: 5px solid variaveis.$corTextoS;
+            }
+        }
+    }
+    h2 {
+        color:variaveis.$corTextoS;
+        font-family: 'bayformance';
+        text-transform: uppercase;
+    }
+    p {
+        color:variaveis.$corTextoS;
+        font-family: 'bayformance';
+        text-transform: uppercase;
+    }
+}
