@@ -13,6 +13,11 @@
             display: grid;
         }
         
+        &__texto {
+            height: 100%;
+            width: 100%;
+        }
+
         &__itens {
             img {
                 max-width: 100%;
@@ -20,13 +25,8 @@
                 border-radius: 4px;
                 margin-bottom: 15px;
             }
-        }
 
-        &__texto {
-            font-size: 30px;
-            text-align: center;
         }
-
     }
 
     &__tab {
@@ -55,7 +55,9 @@
     }
     p {
         color:variaveis.$corTextoS;
-        font-family: 'bayformance';
-        text-transform: uppercase;
+        font-family: sans-serif;
+        font-size: 22px;
+        
     }
+    
 }
